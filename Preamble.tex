@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{\huge \textbf{[Title]}\\
+\Large{[Subject]}}
+\author{Diego Rodríguez\\A01570204}
+\usepackage{mathrsfs}
+\usepackage{geometry}
+ \geometry{
+ letterpaper,
+ total={175mm,220mm},
+ }
+\usepackage[sorting=none]{biblatex}
+\addbibresource{bibs.bib}
+\usepackage{cancel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{esint}
+\usepackage{xcolor}
+\onehalfspacing
+\newenvironment{sol}
+    {\begin{center}
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    }
+    {
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+\usepackage{siunitx}
+\usepackage{gensymb}
+\usepackage{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+\begin{document}
+\let\oldhat\hat
+\newcommand{\vect}[1]{\dot{\vec{#1}}}
+\newcommand{\vectt}[1]{\ddot{\vec{#1}}}
+\newcommand{\vecttt}[1]{\dddot{\vec{#1}}}
+\renewcommand{\vec}[1]{\bm{#1}}
+\renewcommand{\hat}[1]{\oldhat{\bm{#1}}}
+\newcommand{\qed}{\blacksquare}
+\newcommand{\norm}[1]{\left|#1\right|}
+\newcommand{\dev}[2]{\frac{d#1}{d#2}}
+\newcommand{\devp}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\rot}[1]{\nabla\times#1}
+\newcommand{\e}{\hat{\textbf{e}}}
+\newcommand{\ihat}{\bm{\hat{\imath}}}
+\newcommand{\jhat}{\bm{\hat{\jmath}}}
+\maketitle
+\noindent
+
+
+\end{document}
